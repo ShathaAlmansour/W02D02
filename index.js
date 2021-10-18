@@ -96,3 +96,29 @@ const getCourseKeys = (obj) => {
         console.log(obj);
     }
 };
+
+// 3 
+
+const PassedOrFailed = function (studentGrades) {
+    // TODO: Your code here
+};
+const studentOne = {
+    math: { grade: 70, total: 120 },
+    english: { grade: 80, total: 100 },
+    art: { grade: 90, total: 100 }
+};
+const studentTwo = {
+    math: { grade: 59, total: 120 },
+    english: { grade: 80, total: 100 },
+    art: { grade: 90, total: 100 }
+};
+
+const totalCharacters = (arr) => {
+    let total = 0;
+    for (let i = 0; i < arr.length; i++) {
+        total += arr[i].length;
+    }
+    return total;
+};
+
+//6
