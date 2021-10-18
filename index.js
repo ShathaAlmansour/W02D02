@@ -100,7 +100,12 @@ const getCourseKeys = (obj) => {
 // 3 
 
 const PassedOrFailed = function (studentGrades) {
-    // TODO: Your code here
+    let = Object.values(studentGrades);
+    for (let i = 0; i < avr.length; i++) {
+        if (avr[i].grade / avr[i].total < 0.50)
+            return "The student have failed";
+    }
+    return "The student have passed";
 };
 const studentOne = {
     math: { grade: 70, total: 120 },
