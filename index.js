@@ -122,3 +122,4 @@ const totalCharacters = (arr) => {
 };
 
 //6
+//7
