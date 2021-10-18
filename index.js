@@ -127,4 +127,20 @@ const totalCharacters = (arr) => {
 };
 
 //6
-//7
+
+const uniqueDogs = {
+    max: { breed: "Labrador Retriever", color: "blond" },
+    rex: { breed: "German Shepherd", color: "black and brown" },
+    lucy: { breed: "Bulldog", color: "white" },
+    lucifer: { breed: "Chihuahua", color: "brown" },
+};
+const createDog = function (name, dogBreed, furColor) {
+    let arr = Object.getOwnPropertyNames(uniqueDogs);
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == name) {
+            return "Added the dog successfully";
+        }
+    }
+    uniqueDogs[name] = { bread: dogBreed, color: furColor };
+    return "The dog isn't unique enough";
+};
