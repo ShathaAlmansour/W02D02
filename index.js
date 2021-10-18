@@ -72,3 +72,10 @@ const countNumberOfElements = (arr) => {
     return res;
 };
 
+//objects
+
+const checkValues = (obj, value) => {
+    return Object.values(obj).includes(value);
+  };
+
+  
