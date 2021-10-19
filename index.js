@@ -97,7 +97,14 @@ const getCourseKeys = (obj) => {
     }
 };
 
-// 3 
+const updateNumbers = (obj) => {
+    let arr = [];
+    for (const info in obj) {
+        arr.push(`${info}: ${obj[info]}`);
+        console.log(info)
+    }
+    return arr;
+};
 
 const PassedOrFailed = function (studentGrades) {
     let = Object.values(studentGrades);
@@ -126,7 +133,16 @@ const totalCharacters = (arr) => {
     return total;
 };
 
-//6
+const houseSize = (arr) => {
+    let sizes = [];
+    for (let i = 0; i < arr.length; i++) {
+        let object = {};
+        object.house = arr[i];
+        object.members = arr[i];
+        sizes.push(object);
+    }
+    return sizes;
+};
 
 const uniqueDogs = {
     max: { breed: "Labrador Retriever", color: "blond" },
